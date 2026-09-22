@@ -1,0 +1,20 @@
+{
+  "name": "melonly-trpc-api",
+  "version": "1.1.2",
+  "description": "A simple tRPC API client for the Melonly.xyz Webside. Without Needing any Token",
+  "keywords": [
+    "trpc",
+    "api",
+    "notoken",
+    "client",
+    "melonly",
+    "melonly.xyz"
+  ],
+  "license": "MIT",
+  "author": "flummi_24",
+  "type": "commonjs",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo Debug nicht Möglich für Dieses Projekt && exit 1"
+  }
+}

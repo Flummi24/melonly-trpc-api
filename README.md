@@ -1,5 +1,9 @@
 # Melonly.xyz tRPC API Client
 
+[![GitHub](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white)](https://github.com/Flummi24/melonly-trpc-api)
+[![npm Package](https://img.shields.io/badge/npm-CB3837?logo=npm&logoColor=white)](https://www.npmjs.com/package/melonly-trpc-api)
+
+
 This Api Client allowes you to Use The **Melonly.xyz API Without ANY API Key**
 
 ## ✨ Features
@@ -34,11 +38,12 @@ const client = require("melonly-trpc-api")
 const melonly = new client({
     serverid: "7412495179740876800",
     token: process.env.TOKEN
-})
+});
 
 (async () => {
-console.log(await melonly.server.members.all())
-})()
+    const members = await melonly.server.members.all();
+    console.log(members)
+})
 ```
 
 **Server Id**: The Server Id can be found in the Webside Url: https://melonly.xyz/panel/7412495179740876800   <-- This Last Number is the ServerID
@@ -46,9 +51,22 @@ console.log(await melonly.server.members.all())
 **Token**: The "Token" is in this Case your **Browser Cookie**. You can get it with the **F12** / **Browser Dev Tools**
 
 
+
 ## 📋 Logs
 
 To **Get, Create or Delete Logs**, you can use the **melonly.logs** Feature
+
+**Types:**
+
+0 = Warning
+
+1 = Kick
+
+2 = Ban
+
+3 = Ban Bolo
+
+4 = Note
 
 ```js
 const data = await melonly.logs.create("player", "RDM", 0) // Creates a Warning for The User "player" for RDM
@@ -136,14 +154,17 @@ console.log(data) // An Json Array with Objects in it
 })()
 ```
 
+
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
-Made by @flummi_24
+Made by **@flummi_24**
 
-If you have any Questions or Somethings else: Discord: **@flummi_24**
+If you have any Questions or Somethings else: **Discord: @flummi_24**
 
-[**NPM Packge**](https://www.npmjs.com/package/melonly-trpc-api)
+[**Github**](https://github.com/Flummi24/melonly-trpc-api)
+
+[**NPM**](https://www.npmjs.com/package/melonly-trpc-api)
