@@ -1,0 +1,26 @@
+{
+  "name": "melonly-trpc-api",
+  "version": "2.0.0",
+  "description": "A simple tRPC API client for the Melonly.xyz Webside. Without Needing any Token",
+  "keywords": [
+    "melonly",
+    "melonly.xyz",
+    "melonly-api",
+    "trpc",
+    "trpc-client",
+    "api-client",
+    "nodejs",
+    "javascript",
+    "tokenless"
+  ],
+  "license": "MIT",
+  "author": "flummi_24",
+  "type": "commonjs",
+  "main": "main.js",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "ws": "^8.22.2"
+  }
+}
